@@ -13,6 +13,11 @@
 		E1C3FBB91E233FE2007DFB1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C3FBB71E233FE2007DFB1E /* Main.storyboard */; };
 		E1C3FBBB1E233FE2007DFB1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C3FBBA1E233FE2007DFB1E /* Assets.xcassets */; };
 		E1C3FBBE1E233FE2007DFB1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1C3FBBC1E233FE2007DFB1E /* LaunchScreen.storyboard */; };
+		E1C3FBC61E235B90007DFB1E /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E1C3FBC51E235B90007DFB1E /* ArcGIS.bundle */; };
+		E1C3FBCC1E235CC3007DFB1E /* TianDiTuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3FBC91E235CC3007DFB1E /* TianDiTuLayer.m */; };
+		E1C3FBCD1E235CC3007DFB1E /* TianDiTuLayerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C3FBCB1E235CC3007DFB1E /* TianDiTuLayerInfo.m */; };
+		E1C3FBD41E236290007DFB1E /* ArcGIS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C3FBD31E236290007DFB1E /* ArcGIS.framework */; };
+		E1C3FBD61E2364FE007DFB1E /* libc++.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C3FBD51E2364FE007DFB1E /* libc++.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		E1C3FBBA1E233FE2007DFB1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1C3FBBD1E233FE2007DFB1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1C3FBBF1E233FE2007DFB1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C3FBC51E235B90007DFB1E /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ArcGIS.bundle; sourceTree = "<group>"; };
+		E1C3FBC81E235CC3007DFB1E /* TianDiTuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TianDiTuLayer.h; sourceTree = "<group>"; };
+		E1C3FBC91E235CC3007DFB1E /* TianDiTuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TianDiTuLayer.m; sourceTree = "<group>"; };
+		E1C3FBCA1E235CC3007DFB1E /* TianDiTuLayerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TianDiTuLayerInfo.h; sourceTree = "<group>"; };
+		E1C3FBCB1E235CC3007DFB1E /* TianDiTuLayerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TianDiTuLayerInfo.m; sourceTree = "<group>"; };
+		E1C3FBCF1E235FC4007DFB1E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		E1C3FBD11E23614D007DFB1E /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		E1C3FBD31E236290007DFB1E /* ArcGIS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ArcGIS.framework; path = ../../Library/SDKs/ArcGIS/iOS/Frameworks/Static/ArcGIS.framework; sourceTree = "<group>"; };
+		E1C3FBD51E2364FE007DFB1E /* libc++.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.1.dylib"; path = "../../../../usr/lib/libc++.1.dylib"; sourceTree = "<group>"; };
+		E1C3FBD71E236799007DFB1E /* ArcGIS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ArcGIS.framework; path = ../../../Library/SDKs/ArcGIS/iOS/Frameworks/Static/ArcGIS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1C3FBD61E2364FE007DFB1E /* libc++.1.dylib in Frameworks */,
+				E1C3FBD41E236290007DFB1E /* ArcGIS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,7 @@
 			children = (
 				E1C3FBAD1E233FE2007DFB1E /* CustomTianDiTuLayerV100.0-ObjC */,
 				E1C3FBAC1E233FE2007DFB1E /* Products */,
+				E1C3FBCE1E235FC4007DFB1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +76,9 @@
 		E1C3FBAD1E233FE2007DFB1E /* CustomTianDiTuLayerV100.0-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				E1C3FBD71E236799007DFB1E /* ArcGIS.framework */,
+				E1C3FBC71E235C8F007DFB1E /* TianDiTu2.0 */,
+				E1C3FBC51E235B90007DFB1E /* ArcGIS.bundle */,
 				E1C3FBB11E233FE2007DFB1E /* AppDelegate.h */,
 				E1C3FBB21E233FE2007DFB1E /* AppDelegate.m */,
 				E1C3FBB41E233FE2007DFB1E /* ViewController.h */,
@@ -77,6 +98,28 @@
 				E1C3FBAF1E233FE2007DFB1E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1C3FBC71E235C8F007DFB1E /* TianDiTu2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				E1C3FBC81E235CC3007DFB1E /* TianDiTuLayer.h */,
+				E1C3FBC91E235CC3007DFB1E /* TianDiTuLayer.m */,
+				E1C3FBCA1E235CC3007DFB1E /* TianDiTuLayerInfo.h */,
+				E1C3FBCB1E235CC3007DFB1E /* TianDiTuLayerInfo.m */,
+			);
+			name = TianDiTu2.0;
+			sourceTree = "<group>";
+		};
+		E1C3FBCE1E235FC4007DFB1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1C3FBD51E2364FE007DFB1E /* libc++.1.dylib */,
+				E1C3FBD31E236290007DFB1E /* ArcGIS.framework */,
+				E1C3FBD11E23614D007DFB1E /* libc++.1.tbd */,
+				E1C3FBCF1E235FC4007DFB1E /* libc++.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,7 @@
 			files = (
 				E1C3FBBE1E233FE2007DFB1E /* LaunchScreen.storyboard in Resources */,
 				E1C3FBBB1E233FE2007DFB1E /* Assets.xcassets in Resources */,
+				E1C3FBC61E235B90007DFB1E /* ArcGIS.bundle in Resources */,
 				E1C3FBB91E233FE2007DFB1E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +195,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C3FBB61E233FE2007DFB1E /* ViewController.m in Sources */,
+				E1C3FBCD1E235CC3007DFB1E /* TianDiTuLayerInfo.m in Sources */,
+				E1C3FBCC1E235CC3007DFB1E /* TianDiTuLayer.m in Sources */,
 				E1C3FBB31E233FE2007DFB1E /* AppDelegate.m in Sources */,
 				E1C3FBB01E233FE2007DFB1E /* main.m in Sources */,
 			);
@@ -270,8 +316,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/Frameworks/Static";
 				INFOPLIST_FILE = "CustomTianDiTuLayerV100.0-ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "makl.CustomTianDiTuLayerV100-0-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -281,8 +335,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/iOS/Frameworks/Static";
 				INFOPLIST_FILE = "CustomTianDiTuLayerV100.0-ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-framework",
+					ArcGIS,
+					"-l",
+					"c++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "makl.CustomTianDiTuLayerV100-0-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -307,6 +369,7 @@
 				E1C3FBC41E233FE2007DFB1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
