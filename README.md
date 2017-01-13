@@ -16,7 +16,7 @@
 
 支持Web Mercator和GCS2000两种坐标系的服务访问。
 
-##需求：
+##系统需求：
 
 1. ArcGIS Runtime SDK for iOS 100.0
 2. Xcode 8(或更高)
