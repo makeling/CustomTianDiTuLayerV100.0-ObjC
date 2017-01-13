@@ -1,6 +1,6 @@
 # CustomTianDiTuLayerV100.0-ObjC
 
-这个示例是为了解决如何基于ArcGIS Runtime SDK for iOS 100.0，通过客户化图层访问天地图服务。
+这个示例是为了解决如何基于ArcGIS Runtime SDK for iOS 100.0，通过客户化图层访问天地图WMTS服务。
 
 说明：
 工程中包含的TianDiTuLayer，是用于访问天地图服务的自定义图层。TianDiTuLayerInfo封装了天地图wmts服务的缓存schema信息。
