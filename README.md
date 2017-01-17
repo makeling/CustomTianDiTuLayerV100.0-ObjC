@@ -1,26 +1,55 @@
-# CustomTianDiTuLayerV100.0-ObjC
+CustomTianDiTuLayerV100.0-ObjC
+==========================
+This sample contains sample code demonstrating how to customize a tianditu wmts layer based on ArcGIS Runtime SDK for iOS 100.0. This sample is an entire project that can be opened in XCode and instantly run on a simulator or a device.
 
-##概览
+The ```master``` branch of this repository contains samples configured for the latest available version.
 
-这个示例是为了解决如何基于ArcGIS Runtime SDK for iOS 100.0，通过客户化图层访问天地图WMTS服务。
+## Features
 
-##说明：
+TianDiTuLayer can be used to access the tianditu wmts services include:
 
-工程中包含的TianDiTuLayer，是用于访问天地图服务的自定义图层。TianDiTuLayerInfo封装了天地图wmts服务的缓存schema信息。
+1. tianditu vector services (map, chinese annotation, english annotation)
+2. tianditu image services (map, chinese annotation, english annotation)
+3. tianditu terrain services (map, chinese annotation)
 
-这个Demo实现了对以下天地图服务的访问：
+support spatial reference: Web Mercator(102100) & GCS2000(2000)
 
-1. 天地图矢量服务，（地图，中文标注，英文标注）
-2. 天地图影像服务，（地图，中文标注，英文标注）
-3. 天地图地形服务，（地图，中文标注）
+## Requirements
+* [ArcGIS Runtime SDK for iOS 100](https://developers.arcgis.com/en/ios/) (Requires ArcGIS Online account; free to sign up)
+* XCode 8 (or higher)
+* iOS 10 SDK (or higher)
 
-支持Web Mercator和GCS2000两种坐标系的服务访问。
 
-##系统需求：
+## Issues
 
-1. ArcGIS Runtime SDK for iOS 100.0
-2. Xcode 8(或更高)
-3. iOS 10 SDK（或更高）
+Find a bug or want to request a new feature?  Please let us know by submitting an issue.
 
-这是一个完整独立的工程，基于Xcode8.2版本开发，支持iOS9以上的系统部署。
+## Contributing
 
+EsriChina welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/serverteamCN/contributing).
+
+## Licensing
+MIT License
+
+Copyright (c) 2017 EsriChina
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+[](Tags: ArcGIS Runtime iOS SDK Samples)
+[](Language: Objective-C, Swift)
