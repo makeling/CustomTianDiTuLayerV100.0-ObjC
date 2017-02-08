@@ -2,7 +2,7 @@
 
 ##概览
 
-这个示例是为了解决如何基于ArcGIS Runtime SDK for iOS 100.0，通过客户化图层访问天地图WMTS服务。这是一个完整独立的工程，基于Xcode8.2版本开发，支持iOS9以上的系统部署。
+这个示例是为了解决如何基于ArcGIS Runtime SDK for iOS 100.0，通过客户化图层访问天地图WMTS服务。这是一个完整独立的工程，使用Objective-C语言，基于Xcode8.2版本开发，支持iOS9以上的系统部署。
 
 ##说明：
 
@@ -23,7 +23,7 @@
 3. iOS 10 SDK（或更高）
 
 ##工程下载地址：
-[ArcGISRuntimeForIOSV100.0Demos](https://github.com/serverteamCN/IOS.git)
+[ArcGISRuntimeForIOSV100.0Demos](https://github.com/makeling/CustomTianDiTuLayerV100.0-ObjC.git)
 
 
 
