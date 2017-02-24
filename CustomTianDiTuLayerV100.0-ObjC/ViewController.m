@@ -25,7 +25,9 @@
     [super viewDidLoad];
     
     
-    //create an instance of a map     self.map = [[AGSMap alloc] init];
+    //create an instance of a map
+    
+    self.map = [[AGSMap alloc] init];
     
     TianDiTuLayerInfo *tdtInfo = [[TianDiTuLayerInfo alloc] initwithlayerType:TDT_IMAGE SpatialReferenceWKID:TDT_2000];
     
