@@ -4,9 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment version="2304" identifier="iOS"/>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,25 +21,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUm-gv-hRT" customClass="AGSMapView">
-                                <rect key="frame" x="75" y="351" width="240" height="128"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWO-IN-fRk" customClass="AGSMapView">
+                                <rect key="frame" x="0.0" y="165" width="375" height="447"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BUm-gv-hRT" secondAttribute="bottom" constant="188" id="B3K-aB-zPm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="BUm-gv-hRT" secondAttribute="trailing" constant="44" id="Z2N-Pz-Leh"/>
-                            <constraint firstItem="BUm-gv-hRT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="oF3-Pu-ZQK"/>
-                            <constraint firstItem="BUm-gv-hRT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="331" id="vqs-rm-5zf"/>
+                            <constraint firstAttribute="trailing" secondItem="HWO-IN-fRk" secondAttribute="trailing" id="0Ui-jk-dOX"/>
+                            <constraint firstItem="HWO-IN-fRk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MI7-i5-Vuq"/>
+                            <constraint firstItem="HWO-IN-fRk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cGA-Hr-8kw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="HWO-IN-fRk" secondAttribute="bottom" constant="55" id="hLx-Eu-xU3"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="BUm-gv-hRT" id="T9R-3S-vJT"/>
+                        <outlet property="mapView" destination="HWO-IN-fRk" id="dPh-a0-Xdy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="44" y="109.29535232383809"/>
         </scene>
     </scenes>
 </document>

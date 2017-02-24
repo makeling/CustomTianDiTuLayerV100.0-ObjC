@@ -24,9 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    /*
-    //create an instance of a map with ESRI topographic basemap
-    self.map = [[AGSMap alloc] init];
+    
+    //create an instance of a map     self.map = [[AGSMap alloc] init];
     
     TianDiTuLayerInfo *tdtInfo = [[TianDiTuLayerInfo alloc] initwithlayerType:TDT_IMAGE SpatialReferenceWKID:TDT_2000];
     
@@ -38,13 +37,8 @@
     
     [[self.map operationalLayers] addObject: ltl1];
     [[self.map operationalLayers] addObject: ltl2];
-     
-     */
     
-    //create an instance of a map with ESRI topographic basemap
-    //self.map = [[AGSMap alloc] initWithBasemap:[AGSBasemap topographicBasemap]];
-    
-    //self.mapView.map = self.map;
+    self.mapView.map = self.map;
 
 }
 
