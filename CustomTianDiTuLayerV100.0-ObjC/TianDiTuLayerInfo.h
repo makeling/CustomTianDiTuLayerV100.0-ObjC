@@ -37,7 +37,7 @@ typedef enum{
 @property(nonatomic,retain)AGSSpatialReference *sp;
 @property(nonatomic,retain,readwrite)AGSEnvelope *fullExtent;
 @property(nonatomic,retain)AGSPoint *origin;
-@property(nonatomic,retain)NSArray *lods;
+@property(nonatomic,retain)NSMutableArray *lods;
 @property(nonatomic,retain)AGSTileInfo *tileInfo;
 
 -(instancetype)initwithlayerType:(TianDiTuLayerType)layerType SpatialReferenceWKID:(TianDiTuSpatialReferenceType)sptype;

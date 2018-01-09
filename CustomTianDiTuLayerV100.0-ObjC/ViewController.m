@@ -29,9 +29,9 @@
     
     self.map = [[AGSMap alloc] init];
     
-    TianDiTuLayerInfo *tdtInfo = [[TianDiTuLayerInfo alloc] initwithlayerType:TDT_IMAGE SpatialReferenceWKID:TDT_2000];
+    TianDiTuLayerInfo *tdtInfo = [[TianDiTuLayerInfo alloc] initwithlayerType:TDT_IMAGE SpatialReferenceWKID:TDT_MERCATOR];
     
-    TianDiTuLayerInfo *tdtannoInfo = [[TianDiTuLayerInfo alloc] initwithlayerType:TDT_IMAGE LanguageType:TDT_EN SpatialReferenceWKID:TDT_2000];
+    TianDiTuLayerInfo *tdtannoInfo = [[TianDiTuLayerInfo alloc] initwithlayerType:TDT_IMAGE LanguageType:TDT_CN SpatialReferenceWKID:TDT_MERCATOR];
     
     TianDiTuLayer *ltl1 = [[TianDiTuLayer alloc] initWithTianDiTuLayerInfo:tdtInfo];
     
