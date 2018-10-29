@@ -29,16 +29,19 @@
     
     self.map = [[AGSMap alloc] init];
     
-    TianDiTuLayerInfo *tdtInfo = [[TianDiTuLayerInfo alloc] initwithlayerType:TDT_IMAGE SpatialReferenceWKID:TDT_MERCATOR];
+    TianDiTuLayerInfo *tdtInfo = [[TianDiTuLayerInfo alloc] initwithlayerType:TDT_VECTOR SpatialReferenceWKID:TDT_MERCATOR];
     
-    TianDiTuLayerInfo *tdtannoInfo = [[TianDiTuLayerInfo alloc] initwithlayerType:TDT_IMAGE LanguageType:TDT_CN SpatialReferenceWKID:TDT_MERCATOR];
+    TianDiTuLayerInfo *tdtannoInfo = [[TianDiTuLayerInfo alloc] initwithlayerType:TDT_VECTOR LanguageType:TDT_CN SpatialReferenceWKID:TDT_MERCATOR];
     
     TianDiTuLayer *ltl1 = [[TianDiTuLayer alloc] initWithTianDiTuLayerInfo:tdtInfo];
     
     TianDiTuLayer *ltl2 = [[TianDiTuLayer alloc] initWithTianDiTuLayerInfo:tdtannoInfo];
     
-    [[self.map operationalLayers] addObject: ltl1];
-    [[self.map operationalLayers] addObject: ltl2];
+//    [[self.map operationalLayers] addObject: ltl1];
+//    [[self.map operationalLayers] addObject: ltl2];
+    
+    [self.map.basemap.baseLayers addObject:ltl1];
+    [self.map.basemap.baseLayers addObject:ltl2];
     
     self.mapView.map = self.map;
 

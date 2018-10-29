@@ -26,7 +26,7 @@
         
         NSString *requestUrl = [NSString stringWithFormat:requestUrl1,tileKey.column,tileKey.row, (tileKey.level + 1)];
         
-        NSLog(@"%@",requestUrl);
+//        NSLog(@"%@",requestUrl);
         
         NSURL* aURL = [NSURL URLWithString:requestUrl];
         

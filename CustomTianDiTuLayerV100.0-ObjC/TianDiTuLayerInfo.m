@@ -155,7 +155,11 @@
         _baseRelu = _baseRelu / 2;
         _baseScale = _baseScale /2;
         
+       
+        
     }
+    
+    
 }
 
 
